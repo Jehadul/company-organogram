@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="organoGramSN" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="c2b19768-0aa5-42e8-a064-7af667f1984e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DATA_ONE" class="java.util.List"/>
+	<parameter name="pointOne" class="java.lang.String"/>
+	<parameter name="teamLeaderName" class="java.lang.String"/>
+	<parameter name="titleRepo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="217" splitType="Stretch">
+			<staticText>
+				<reportElement x="370" y="4" width="100" height="36" uuid="9318f327-8e56-4d42-89e5-8e065f256e33"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[COO]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="324" y="125" width="193" height="44" backcolor="#999999" uuid="90ff8f97-0536-48b7-916b-a99c08250f2d"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointOne}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="381" y="172" width="60" height="44" uuid="1b8d8b87-4492-4a2d-a881-e94982d0e417"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_ONE})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="5" y="0" width="355" height="56" uuid="776a4878-6c19-41a5-82f4-4974e8a26a3e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titleRepo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="58" width="117" height="44" uuid="a7e19577-6cfd-4a6c-9e03-481455d75344"/>
+				<box leftPadding="6" rightPadding="6">
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{teamLeaderName}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="414" y="44" width="15" height="12" uuid="4252e8e7-7103-4980-a109-12409de05934"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="416" y="110" width="15" height="12" uuid="e14b2fcc-ef7f-4002-a268-a2307dad79b5"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>

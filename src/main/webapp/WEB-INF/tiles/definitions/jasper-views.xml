@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="synergyAllReportPdf"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organoGramSN.jrxml" p:reportDataKey="datasource" />
+
+
+	<bean id="teamLeaderWiseReportPdf"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organoGramTMLDW.jrxml" p:reportDataKey="datasource" />
+
+	<bean id="organoGramTMLDWtowfiq"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organoGramTMLDWtowfiq.jrxml" p:reportDataKey="datasource" />
+
+	<bean id="organoGramTMLDWMahbub"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organoGramTMLDWMahbub.jrxml" p:reportDataKey="datasource" />
+
+	<bean id="deptWiseReportPdf"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organogramDeptWise.jrxml" p:reportDataKey="datasource" />
+	<bean id="organogramDeptWiseSubDept"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organogramDeptWiseSubDept.jrxml"
+		p:reportDataKey="datasource" />
+	<bean id="organoGramTMLDWAHMTA"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organoGramTMLDWAHMTA.jrxml" p:reportDataKey="datasource" />
+	<bean id="organogramDeptWiseTenderPre"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organogramDeptWiseTenderPre.jrxml"
+		p:reportDataKey="datasource" />
+	<bean id="organogramDeptWiseSales"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organogramDeptWiseSales.jrxml"
+		p:reportDataKey="datasource" />
+	<bean id="organogramDeptWiseSalesAll"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="classpath:report/organogramDeptWiseSalesAll.jrxml"
+		p:reportDataKey="datasource" />
+
+</beans>

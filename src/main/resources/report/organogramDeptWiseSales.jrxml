@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="organogramDeptWise" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="d2a6e3f2-dcc2-48cc-b2ef-a1e608877fac">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DATA_LEFT" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_RIGHT" class="java.util.List"/>
+	<field name="deptName" class="java.lang.String"/>
+	<field name="deptHeadName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="176" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="50" uuid="114ffcff-64c5-43c6-a8f6-ee637d3d9659"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Organogram -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="146" height="50" uuid="e6910708-5cfc-436f-913b-6ac8c7f67f1e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deptName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="5" width="150" height="40" uuid="5d25d318-013b-4f77-81f3-51a81b9d5fc7"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[COO]]></text>
+			</staticText>
+			<image>
+				<reportElement x="318" y="47" width="20" height="20" uuid="64d4f477-e249-4ca5-91e1-f0b36de78227"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="250" y="70" width="150" height="40" uuid="3eeb8ebd-c33a-4eba-8603-513d2cfc3546"/>
+				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deptHeadName}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="318" y="115" width="20" height="20" uuid="10eae3e8-4e29-46b7-88a1-11d80f549dea"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="57" y="136" width="533" height="8" uuid="02e5a352-a981-4201-b998-1954b164f95a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="57" y="145" width="178" height="29" uuid="1a9127fb-742c-4f90-991a-66044018b455"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_LEFT})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/salesCommon.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="405" y="145" width="186" height="29" uuid="d9b7c338-93d9-4bac-b171-b31077e6e670"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_RIGHT})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/salesCommon_right.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+</jasperReport>

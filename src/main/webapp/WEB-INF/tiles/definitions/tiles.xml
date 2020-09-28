@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition" template="/WEB-INF/tiles/template/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	
+	<definition name="base.definition2" template="/WEB-INF/views/login.jsp">
+		<put-attribute name="title" value="Synergy Organogram"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	<!-- Login Page -->
+	<definition name="login" extends="base.definition2">
+		<put-attribute name="title" value="Organogram Login Form"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="index" extends="base-definition">
+		<put-attribute name="title" value="Synergy Organogram Dashboard"/>
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Synergy Organogram Dashboard"/>
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+	
+	<definition name="addDepartmentForm" extends="base-definition">
+		<put-attribute name="title" value="New Department Entry Form" />
+		<put-attribute name="body" value="/WEB-INF/views/addDepartmentForm.jsp" />
+	</definition>
+	
+	<definition name="addDesignationForm" extends="base-definition">
+		<put-attribute name="title" value="New Designation Entry Form" />
+		<put-attribute name="body" value="/WEB-INF/views/addDesignationForm.jsp" />
+	</definition>
+	
+	<definition name="addPointForm" extends="base-definition">
+		<put-attribute name="title" value="New Point Entry Form" />
+		<put-attribute name="body" value="/WEB-INF/views/addPointForm.jsp" />
+	</definition>
+	
+	<definition name="addEmployeeForm" extends="base-definition">
+		<put-attribute name="title" value="New Employee Entry Form" />
+		<put-attribute name="body" value="/WEB-INF/views/addEmployeeForm.jsp" />
+	</definition>
+	
+	<definition name="activeEmployeeList" extends="base-definition">
+		<put-attribute name="title" value="Active Employee List" />
+		<put-attribute name="body" value="/WEB-INF/views/employeeList.jsp" />
+	</definition>
+	
+	<definition name="inactiveEmployeeList" extends="base-definition">
+		<put-attribute name="title" value="InActive Employee List" />
+		<put-attribute name="body" value="/WEB-INF/views/employeeList.jsp" />
+	</definition>
+	
+	<definition name="reportFormDeptWise" extends="base-definition">
+		<put-attribute name="title" value="Report Form Department Wise List" />
+		<put-attribute name="body" value="/WEB-INF/views/reportFormDeptWise.jsp" />
+	</definition>
+	<definition name="reportFormTeamWise" extends="base-definition">
+		<put-attribute name="title" value="Report Form Team leader Wise " />
+		<put-attribute name="body" value="/WEB-INF/views/reportFormTeamWise.jsp" />
+	</definition>
+	
+</tiles-definitions>

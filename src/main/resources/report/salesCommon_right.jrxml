@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="organoGramSN_gSamadder" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4dceaa94-bdd3-4b32-9f04-f2f638d0a634">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="name" class="java.lang.String"/>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="4" width="162" height="30" uuid="74947141-31e9-4836-80ba-69718461cdda"/>
+				<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3">
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="179" y="0" width="5" height="38" uuid="c14003c4-f8b5-4f62-b412-33c3235f1846"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="164" y="15" width="13" height="11" uuid="b8edae23-c740-4c81-add1-8b07cdccdb2a"/>
+				<imageExpression><![CDATA["left_error.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

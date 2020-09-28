@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="organoGramSN" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="c2b19768-0aa5-42e8-a064-7af667f1984e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DATA_ONE" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_TWO" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_THREE" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_FOUR" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_FIVE" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_SIX" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_SEVEN" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_EIGHT" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_NINE" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_TEN" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_ELEVEN" class="java.util.List"/>
+	<parameter name="SUBREPORT_DATA_TWELVE" class="java.util.List"/>
+	<parameter name="pointOne" class="java.lang.String"/>
+	<parameter name="pointTwo" class="java.lang.String"/>
+	<parameter name="pointThree" class="java.lang.String"/>
+	<parameter name="pointFour" class="java.lang.String"/>
+	<parameter name="pointFive" class="java.lang.String"/>
+	<parameter name="pointSix" class="java.lang.String"/>
+	<parameter name="pointSeven" class="java.lang.String"/>
+	<parameter name="pointEight" class="java.lang.String"/>
+	<parameter name="pointNine" class="java.lang.String"/>
+	<parameter name="pointTen" class="java.lang.String"/>
+	<parameter name="pointEleven" class="java.lang.String"/>
+	<parameter name="pointTwelve" class="java.lang.String"/>
+	<parameter name="teamLeaderName" class="java.lang.String"/>
+	<parameter name="pointlist" class="java.lang.String"/>
+	<parameter name="titleRepo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="383" splitType="Stretch">
+			<staticText>
+				<reportElement x="370" y="4" width="100" height="36" uuid="9318f327-8e56-4d42-89e5-8e065f256e33"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[COO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="65" width="100" height="36" uuid="55d2769a-b070-45ac-ab65-a496e7c2f9f8"/>
+				<box leftPadding="10" rightPadding="10">
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Manager-Sales(TBO)]]></text>
+			</staticText>
+			<image>
+				<reportElement x="412" y="43" width="20" height="20" uuid="1f94474b-af8e-4c5c-b019-33164813672e"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="412" y="104" width="20" height="20" uuid="21b6b7d5-0633-4732-937b-00446f9901cd"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="5" y="260" width="805" height="8" uuid="fc0092a3-5d64-49cf-8f96-b0a97f188039"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<image>
+				<reportElement x="29" y="270" width="20" height="20" uuid="21b42699-b30e-4660-b4ff-e63038dd68b4"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="101" y="270" width="20" height="20" uuid="86b876eb-5e4f-4f7f-a0cb-99a8696f054a"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="166" y="270" width="20" height="20" uuid="bc4af12b-1f0c-4b55-98c6-db66f9b8d405"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="231" y="270" width="20" height="20" uuid="ed4f343a-85cf-4f23-96e3-168b6862d4f9"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="301" y="270" width="20" height="20" uuid="0195ff9e-d3c1-496f-b9ce-edca8e7f8449"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="375" y="270" width="20" height="20" uuid="06178d74-de7a-4df0-937e-7d2c04771e26"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="443" y="270" width="20" height="20" uuid="636aadf4-e614-4f9f-9c5f-7afb9fcc7c51"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="511" y="270" width="20" height="20" uuid="5c617ca3-468b-492d-949b-ad14d8a0ab99"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="582" y="270" width="20" height="20" uuid="46c1a39d-efda-4571-b903-7862adaef431"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="647" y="270" width="20" height="20" uuid="d0dc501f-bab2-413a-86c4-12b11ab08e7a"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="713" y="270" width="20" height="20" uuid="d931c611-489b-45de-babc-301a641c8a12"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="772" y="270" width="20" height="20" uuid="94341e08-0636-47b2-aaef-ffeff3bd162a"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Opaque" x="5" y="292" width="60" height="44" backcolor="#999999" uuid="90ff8f97-0536-48b7-916b-a99c08250f2d"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointOne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="75" y="292" width="60" height="44" backcolor="#999999" uuid="153bbcd4-fb99-4777-b010-74dcc30ce751"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointTwo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="140" y="292" width="60" height="44" backcolor="#999999" uuid="40637522-5aa2-4b06-9786-b9830e4dacf7"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointThree}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="207" y="292" width="60" height="44" backcolor="#999999" uuid="c95755df-ef3d-4bea-b9b3-496ceb6b0d50"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointFour}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="278" y="292" width="60" height="44" backcolor="#999999" uuid="1d947c4d-b406-45f0-b94d-c3279e4e7538"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointFive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="347" y="292" width="60" height="44" backcolor="#999999" uuid="2b21e3fd-4e82-4a63-adb0-ae1bad32b8d0"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointSix}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="417" y="292" width="60" height="44" backcolor="#999999" uuid="50c38c2e-8796-4cf1-b80c-9edd1b4f26a1"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointSeven}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="487" y="292" width="60" height="44" backcolor="#999999" uuid="f21ef1aa-0109-4cb0-8b49-1b90da156566"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointEight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="557" y="292" width="60" height="44" backcolor="#999999" uuid="e15cf599-371c-4dff-aa4e-cb93c51985e6"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointNine}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="622" y="292" width="60" height="44" backcolor="#999999" uuid="27a7c08b-6f00-4f62-9be3-fe799ec00deb"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointTen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="687" y="292" width="60" height="44" backcolor="#999999" uuid="0a8c0dcf-c373-4681-834c-a76732388823"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointEleven}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="752" y="292" width="60" height="44" backcolor="#999999" uuid="0b44dedb-2190-49f6-bdb0-320a9722ff7e"/>
+				<box>
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointTwelve}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="5" y="339" width="60" height="44" uuid="1b8d8b87-4492-4a2d-a881-e94982d0e417"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_ONE})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="75" y="339" width="60" height="44" uuid="40ff8145-b625-4c5f-bf4d-f0a48f492f38"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_TWO})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="140" y="339" width="60" height="44" uuid="98fd3e63-f4ba-437a-8fab-53bea216d288"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_THREE})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="207" y="339" width="60" height="44" uuid="b35c6457-64c7-4bcf-bbf8-f73c5dfd4887"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_FOUR})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="278" y="339" width="60" height="44" uuid="9061e842-cec2-4f2f-9b0d-82b2cc3581e5"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_FIVE})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="347" y="339" width="60" height="44" uuid="4e4c6ed8-0e9c-4eb3-a036-a0d7bea59460"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_SIX})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="417" y="339" width="60" height="44" uuid="396bf1ac-51ea-4b39-92c5-6496a76986db"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_SEVEN})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="487" y="339" width="60" height="44" uuid="0c86abd7-e009-4c1e-a9b5-0b0b7b26f53d"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_EIGHT})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="557" y="339" width="60" height="44" uuid="8025003b-4de9-468d-91b0-8a90f618c37c"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_NINE})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="622" y="339" width="60" height="44" uuid="ec5c4702-fb52-442a-90f9-f175beb38720"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_TEN})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="687" y="339" width="60" height="44" uuid="95071225-3eb3-4f1d-8225-97a475bc89d5"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_ELEVEN})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="752" y="339" width="60" height="44" uuid="7ebce091-ec6d-416a-ad5c-ee42628cb8fc"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{SUBREPORT_DATA_TWELVE})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["report/pointEmpCom.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="5" y="0" width="355" height="24" uuid="776a4878-6c19-41a5-82f4-4974e8a26a3e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titleRepo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="317" y="126" width="210" height="44" backcolor="#999999" uuid="8a749cf6-779e-437e-ba01-2533f1e2e6e3"/>
+				<box leftPadding="6" rightPadding="6">
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pointlist}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="412" y="172" width="20" height="20" uuid="8c232c14-44bd-4e11-a5e0-9913372058a4"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="360" y="192" width="117" height="44" uuid="a7e19577-6cfd-4a6c-9e03-481455d75344"/>
+				<box leftPadding="6" rightPadding="6">
+					<pen lineWidth="1.75"/>
+					<topPen lineWidth="1.75"/>
+					<leftPen lineWidth="1.75"/>
+					<bottomPen lineWidth="1.75"/>
+					<rightPen lineWidth="1.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{teamLeaderName}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="412" y="238" width="20" height="20" uuid="781b3bf5-628d-459a-8b7a-7829ba35d53e"/>
+				<imageExpression><![CDATA["bottom_one.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>
